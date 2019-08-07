@@ -1,4 +1,4 @@
-package com.mdelbel.android.features.barcode.template
+package com.mdelbel.android.features.template
 
 import org.junit.Test
 
