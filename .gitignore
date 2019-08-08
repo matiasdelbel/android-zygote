@@ -1,11 +1,19 @@
-*.iml
+# Generated files
+bin/
+gen/
 
-.gradle
+# Gradle files
+.gradle/
+build/
 
-/local.properties
+# Local configuration file (sdk path, etc)
+local.properties
 
-.idea/
+# Log Files
+*.log
 
-.DS_Store
+/.idea
+/**/*.iml
 
-/build
+# MAC Files
+/**/.DS_Store
