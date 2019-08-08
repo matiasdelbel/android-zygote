@@ -3,6 +3,16 @@
 ## Description
 In this repository you we'll find an Android template project with some basic configuration.
 
+### Kotlin Support
+For that, we added the dependency on the general build.gradle file
+```
+dependencies {
+        classpath plugin.kotlin
+    }
+```
+And we also add some modification on each module, you can find it on the `kotlin-support.gradle` file.
+
+
 ### Android Gradle Configuration
 If you wish to change some default configuration for the android node of your module, like minimum sdk version or compile version, you can find their on the `gradle/module-android-config.gradle` file.
 
