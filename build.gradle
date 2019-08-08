@@ -33,4 +33,10 @@ subprojects {
 
     // Add Kotlin support for all the modules
     apply from: "$rootDir/gradle/kotlin-support.gradle"
+
+    // Configure android node
+    apply from: "$rootDir/gradle/module-android-config.gradle"
+
+    // Add unit-testing dependencies
+    apply from: "$rootDir/gradle/dependencies-testing.gradle"
 }
