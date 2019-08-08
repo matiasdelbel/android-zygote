@@ -27,16 +27,14 @@ task clean(type: Delete) {
 subprojects {
     if (name == 'app') {
         apply plugin: 'com.android.application'
+        apply from: "$rootDir/gradle/module-kotlin-android.gradle"
     } else {
-        apply plugin: 'com.android.library'
+        // Their are libraries, 'domain' is the only kotlin library
+        if (name == 'domain') {
+            apply from: "$rootDir/gradle/module-kotlin.gradle"
+        } else {
+            apply plugin: 'com.android.library'
+            apply from: "$rootDir/gradle/module-kotlin-android.gradle"
+        }
     }
-
-    // Add Kotlin support for all the modules
-    apply from: "$rootDir/gradle/kotlin-support.gradle"
-
-    // Configure android node
-    apply from: "$rootDir/gradle/module-android-config.gradle"
-
-    // Add unit-testing dependencies
-    apply from: "$rootDir/gradle/dependencies-testing.gradle"
 }
