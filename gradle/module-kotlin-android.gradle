@@ -31,9 +31,9 @@ android {
 
 dependencies {
     // Kotlin support dependency
-    implementation kotlinSupport.stdlibJdk7
+    implementation kotlinDependencies.stdlibJdk7
 
     // Testing dependencies
-    testImplementation test.jUnit
-    testImplementation test.mockito
+    testImplementation testDependencies.jUnit
+    testImplementation testDependencies.mockito
 }
