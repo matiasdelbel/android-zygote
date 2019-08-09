@@ -3,7 +3,6 @@ package com.mdelbel.android.zygote.gateway
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-// TODO Delete this class after clone
 class GatewayTestClassTest {
 
     @Test
