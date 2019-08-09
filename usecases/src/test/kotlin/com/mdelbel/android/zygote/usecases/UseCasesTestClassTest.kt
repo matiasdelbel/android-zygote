@@ -3,7 +3,6 @@ package com.mdelbel.android.zygote.usecases
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-// TODO Delete this class after clone
 class UseCasesTestClassTest {
 
     @Test

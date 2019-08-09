@@ -3,7 +3,6 @@ package com.mdelbel.android.zygote.domain
 import junit.framework.Assert.assertEquals
 import org.junit.Test
 
-// TODO Delete this class after clone
 class DomainTestClassTest {
 
     @Test
