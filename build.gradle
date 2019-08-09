@@ -1,5 +1,7 @@
+apply from: "$rootDir/.dna/module-configuration.gradle"
+
 buildscript {
-    apply from: "$rootDir/dependencies.gradle"
+    apply from: "$rootDir/.dna/dependencies.gradle"
 
     repositories {
         google()
@@ -22,19 +24,4 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
-}
-
-subprojects {
-    if (name == 'app') {
-        apply plugin: 'com.android.application'
-        apply from: "$rootDir/gradle/module-kotlin-android.gradle"
-    } else {
-        // Their are libraries, 'domain' is the only kotlin library
-        if (name == 'domain') {
-            apply from: "$rootDir/gradle/module-kotlin.gradle"
-        } else {
-            apply plugin: 'com.android.library'
-            apply from: "$rootDir/gradle/module-kotlin-android.gradle"
-        }
-    }
 }
