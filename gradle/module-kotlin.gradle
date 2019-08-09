@@ -1,9 +1,0 @@
-apply plugin: 'kotlin'
-
-dependencies {
-    implementation kotlinDependencies.stdlibJdk7
-
-    // Testing dependencies
-    testImplementation testDependencies.jUnit
-    testImplementation testDependencies.mockito
-}
