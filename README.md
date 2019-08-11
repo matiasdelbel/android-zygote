@@ -8,7 +8,8 @@
 ## How to use it?
 - Click the `Use this template` button and complete the flow until you create a new repository from this project.
 - Turn on your project on Travis `https://travis-ci.org/<User>/<project-name>/settings`
-- `Find & Replace` `com.mdelbel.android.zygote` to rename the current project's package name to yours.
+- Change the package name on the Android manifest of app, gateway, presentation and use cases modules.
+Also, do not forget to rename the `applicationId` on the `build.gradle` file on the app module
 - Push changes in the repository that you've just created (do not forget of change this README).
 
 ## What will you find on this zygote?
