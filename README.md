@@ -1,15 +1,16 @@
 # Zygote for an Android Project
 
 ## Prerequisites
-1- Have an account on Github
-2- Have an account on Travis-CI associated with your Github user.
-3- Have an account on CodeCov associated with your Github user.
+- Have an account on Github
+- Have an account on Travis-CI associated with your Github user.
+- Have an account on CodeCov associated with your Github user.
 
 ## How to use it?
-1- Click the `Use this template` button and complete the flow until you create a new repository from this project.
-2- Turn on your project on Travis `https://travis-ci.org/<User>/<project-name>/settings`
-3- `Find & Replace` `com.mdelbel.android.zygote` to rename the current project's package name to yours.
-4- Push changes in the repository that you've just created (do not forget of change this README).
+- Click the `Use this template` button and complete the flow until you create a new repository from this project.
+- Turn on your project on Travis `https://travis-ci.org/<User>/<project-name>/settings`
+- Change the package name on the Android manifest of app, gateway, presentation and use cases modules.
+Also, do not forget to rename the `applicationId` on the `build.gradle` file on the app module
+- Push changes in the repository that you've just created (do not forget of change this README).
 
 ## What will you find on this zygote?
 Here you'll find an Android template project with some basic configuration.
