@@ -1,9 +1,3 @@
 apply plugin: 'kotlin-android-extensions'
 
 android.defaultConfig.applicationId = "com.mdelbel.android.zygote.testapp"
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation appCompatDependencies.appCompat
-}
