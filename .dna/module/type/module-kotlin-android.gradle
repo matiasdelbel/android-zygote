@@ -39,6 +39,7 @@ dependencies {
 
     // Testing dependencies
     testDependencies.each { testImplementation it }
+    testDependenciesAndroid.each { testImplementation it }
 }
 
 ktlint.android = true
