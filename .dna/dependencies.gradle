@@ -3,6 +3,7 @@ ext {
     jUnit = "junit:junit:4.12"
     mockito = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
     truth = "com.google.truth:truth:1.0"
+    testCore = "android.arch.core:core-testing:1.1.1"
 
     pluginDependencies = [
             gradle: "com.android.tools.build:gradle:3.4.2",
@@ -17,7 +18,5 @@ ext {
 
     testDependencies = [jUnit, mockito, truth]
     
-    testDependenciesAndroid = [
-            core: "android.arch.core:core-testing:1.1.1"
-    ]
+    testDependenciesAndroid = [testCore]
 }
